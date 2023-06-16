@@ -54,15 +54,9 @@ with models.DAG(
 ) as dag:
     create_data_pipeline = CreateDataPipelineOperator(
         task_id="create_data_pipeline",
-<<<<<<< HEAD
         project_id="dataflow-interns",
         location="us-central1",
         data_pipeline_name="airflow-test-1"
-=======
-        project_id="google.com:clouddfe",
-        location="us-central1",
-        data_pipeline_name="airflow-test"
->>>>>>> 905b908b8e16e00148d1a535fa718d1db09dd856
     )    
     
     create_data_pipeline
